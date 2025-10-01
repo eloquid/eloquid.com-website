@@ -166,70 +166,53 @@
       </section>
       <!-- End Services Section -->
 
-      <!-- ======= Contact Section (moved out of footer) ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>Contact</h2>
-            <p>Tell us about your project</p>
-          </header>
+    <!-- ======= Contact Section (form only) ======= -->
+    <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+        <header class="section-header">
+        <h2>Contact</h2>
+        <p>Tell us about your project</p>
+        </header>
 
-          <div class="row gy-4">
-            <div class="col-lg-5">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Address</h4>
-                  <p>Eloquid S.r.l.<br/>Via Isonzo 11, 37029 Verona, Italy</p>
+        <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Formspree AJAX form -->
+            <form id="contact-form" action="https://formspree.io/f/mblzyjjj" method="POST" class="php-email-form" novalidate>
+            <div class="row gy-3">
+                <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" name="name" type="text" class="form-control" autocomplete="name" />
+                </div>
+                <div class="col-md-6">
+                <label for="email" class="form-label">Email *</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="you@company.com" autocomplete="email" required />
+                </div>
+                <div class="col-12">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="How can we help?" required></textarea>
                 </div>
 
-                <div class="email mt-3">
-                  <i class="bi bi-linkedin"></i>
-                  <h4>Follow</h4>
-                  <p><a target="_blank" href="https://www.linkedin.com/company/eloquid/" rel="noopener">LinkedIn</a></p>
+                <!-- helpful extras -->
+                <input type="hidden" name="_subject" value="Website contact form" />
+                <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="site" value="eloquid.com" />
+
+                <div class="col-12">
+                <button id="contact-form-button" type="submit" class="btn btn-primary">Send</button>
+                <p id="contact-form-status" class="mt-2 small" aria-live="polite"></p>
                 </div>
-              </div>
+
+                <p class="text-muted small mt-2">
+                By sending this form you agree to be contacted back about your request.
+                </p>
             </div>
-
-            <div class="col-lg-7">
-              <!-- Formspree AJAX form -->
-              <form id="contact-form" action="https://formspree.io/f/mblzyjjj" method="POST" class="php-email-form" novalidate>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <label for="name" class="form-label">Name</label>
-                    <input id="name" name="name" type="text" class="form-control" autocomplete="name" />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">Email *</label>
-                    <input id="email" name="email" type="email" class="form-control" placeholder="you@company.com" autocomplete="email" required />
-                  </div>
-                  <div class="col-12">
-                    <label for="message" class="form-label">Message *</label>
-                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="How can we help?" required></textarea>
-                  </div>
-
-                  <!-- helpful extras -->
-                  <input type="hidden" name="_subject" value="Website contact form" />
-                  <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off" />
-                  <input type="hidden" name="site" value="eloquid.com" />
-
-                  <div class="col-12">
-                    <button id="contact-form-button" type="submit" class="btn btn-primary">
-                      Send
-                    </button>
-                    <p id="contact-form-status" class="mt-2 small" aria-live="polite"></p>
-                  </div>
-
-                  <p class="text-muted small mt-2">
-                    By sending this form you agree to be contacted back about your request.
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
+            </form>
         </div>
-      </section>
-      <!-- End Contact Section -->
+        </div>
+    </div>
+    </section>
+    <!-- End Contact Section -->
+
     </main>
     <!-- End #main -->
 
