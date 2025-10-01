@@ -2429,3 +2429,16 @@ section {
   font-size: 13px;
   color: #ffffff;
 }
+/* CTA button palette aligned with navbar Contact */
+.btn-request-demo {
+  background: #D6267C;
+  border-color: #D6267C;
+  color: #fff;
+}
+
+.btn-request-demo:hover,
+.btn-request-demo:focus {
+  color: #fff;
+  background: #5969f3;
+  border-color: #5969f3;
+}
