@@ -254,17 +254,28 @@ section {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #D6267C;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
+  border: 2px solid #D6267C;
   color: #fff;
+  background: #D6267C;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
 }
 
 .navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #5969f3;
+.navbar .getstarted:focus,
+.navbar .getstarted:active {
+  color: #D6267C;
+  background: #fff;
+  border-color: #D6267C;
+  box-shadow: 0px 12px 35px rgba(214, 38, 124, 0.2);
+  transform: translateY(-2px);
+}
+
+.navbar .getstarted:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
 
 .navbar .dropdown ul {
@@ -406,6 +417,30 @@ section {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 2px solid #D6267C;
+  color: #fff;
+  background: #D6267C;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+.navbar-mobile .getstarted:hover,
+.navbar-mobile .getstarted:focus,
+.navbar-mobile .getstarted:active {
+  color: #D6267C;
+  background: #fff;
+  border-color: #D6267C;
+  box-shadow: 0px 12px 35px rgba(214, 38, 124, 0.2);
+  transform: translateY(-2px);
+}
+
+.navbar-mobile .getstarted:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
 
 .navbar-mobile .dropdown ul {
@@ -470,10 +505,11 @@ section {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
-  transition: 0.5s;
+  border: 2px solid #D6267C;
   color: #fff;
   background: #D6267C;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
 }
 
 .hero .btn-get-started span {
@@ -487,6 +523,21 @@ section {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
+}
+
+.hero .btn-get-started:hover,
+.hero .btn-get-started:focus,
+.hero .btn-get-started:active {
+  color: #D6267C;
+  background: #fff;
+  border-color: #D6267C;
+  box-shadow: 0px 12px 35px rgba(214, 38, 124, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero .btn-get-started:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
 
 .hero .btn-get-started:hover i {
@@ -1085,11 +1136,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background: #fff;
+  background: url(../img/hero-bg.png) top center no-repeat;
+  background-size: cover;
 }
 
 .portfolio .section-header p {
-  color: #000;
+  color: #fff;
 }
 
 .portfolio #portfolio-flters {
@@ -1711,15 +1763,26 @@ section {
 
 .contact .php-email-form button[type=submit] {
   background: #D6267C;
-  border: 0;
+  border: 2px solid #D6267C;
   padding: 10px 30px;
   color: #fff;
-  transition: 0.4s;
   border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+.contact .php-email-form button[type=submit]:hover,
+.contact .php-email-form button[type=submit]:focus,
+.contact .php-email-form button[type=submit]:active {
+  color: #D6267C;
+  background: #fff;
+  border-color: #D6267C;
+  box-shadow: 0px 12px 35px rgba(214, 38, 124, 0.2);
+  transform: translateY(-2px);
+}
+
+.contact .php-email-form button[type=submit]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
 
 @-webkit-keyframes animate-loading {
@@ -2428,4 +2491,26 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ffffff;
+}
+/* CTA button palette aligned with navbar Contact */
+.btn-request-demo {
+  background: #D6267C;
+  border: 2px solid #D6267C;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+.btn-request-demo:hover,
+.btn-request-demo:focus,
+.btn-request-demo:active {
+  color: #D6267C;
+  background: #fff;
+  border-color: #D6267C;
+  box-shadow: 0px 12px 35px rgba(214, 38, 124, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-request-demo:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
