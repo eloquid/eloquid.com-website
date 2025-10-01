@@ -1085,11 +1085,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background: #fff;
+  background: url(../img/hero-bg.png) top center no-repeat;
+  background-size: cover;
 }
 
 .portfolio .section-header p {
-  color: #000;
+  color: #fff;
 }
 
 .portfolio #portfolio-flters {
