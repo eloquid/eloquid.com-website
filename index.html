@@ -29,6 +29,26 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+    /* Contatti: solo le etichette (titoli) in nero */
+    #contact .form-label {
+        color: #000 !important;
+    }
+
+    /* Ripristina i colori default di Bootstrap nei campi */
+    #contact .form-control {
+        color: inherit;                 /* testo digitato: colore di default Bootstrap */
+        -webkit-text-fill-color: inherit;
+    }
+
+    /* Placeholder/suggerimenti restano grigi */
+    #contact .form-control::placeholder {
+        color: #6c757d;                 /* grigio Bootstrap */
+        opacity: 1;                     /* evita attenuazione su alcuni browser */
+    }
+    </style>
+
+
   </head>
 
   <body>
@@ -43,9 +63,9 @@
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <!--<li><a class="nav-link scrollto" href="#about">Fintech</a></li>-->
-            <li><a class="nav-link scrollto" href="#values">Services</a></li>
+            <li><a class="nav-link scrollto" href="#values">Servizi</a></li>
             <li><a class="nav-link scrollto" href="#portfolio">SGI</a></li>
-            <li><a class="getstarted scrollto" href="#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="#contact">Contattaci</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle navigation"></i>
         </nav>
@@ -170,7 +190,7 @@
     <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
         <header class="section-header">
-        <h2>Portfolio</h2>
+        <!-- <h2>Portfolio</h2> -->
         <p>SGI — Software Gestione Incentivi (Funzioni Tecniche)</p>
         </header>
 
@@ -360,13 +380,12 @@
     <!-- End Portfolio / SGI Section -->
 
 
-
-    <!-- ======= Contact Section (form only) ======= -->
+    <!-- ======= Contact Section (IT) ======= -->
     <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
         <header class="section-header">
-        <h2>Contact</h2>
-        <p>Tell us about your project</p>
+        <h2>Contatti</h2>
+        <p>Trova la soluzione migliore per le tue esigenze</p>
         </header>
 
         <div class="row justify-content-center">
@@ -375,30 +394,33 @@
             <form id="contact-form" action="https://formspree.io/f/mblzyjjj" method="POST" class="php-email-form" novalidate>
             <div class="row gy-3">
                 <div class="col-md-6">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">Nome e cognome</label>
                 <input id="name" name="name" type="text" class="form-control" autocomplete="name" />
                 </div>
                 <div class="col-md-6">
                 <label for="email" class="form-label">Email *</label>
-                <input id="email" name="email" type="email" class="form-control" placeholder="you@company.com" autocomplete="email" required />
+                <input id="email" name="email" type="email" class="form-control" placeholder="nome@azienda.it" autocomplete="email" required />
                 </div>
+
                 <div class="col-12">
-                <label for="message" class="form-label">Message *</label>
-                <textarea id="message" name="message" class="form-control" rows="5" placeholder="How can we help?" required></textarea>
+                <label for="message" class="form-label">Come possiamo aiutarti? *</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Raccontaci il progetto o il problema da risolvere." required></textarea>
                 </div>
 
                 <!-- helpful extras -->
-                <input type="hidden" name="_subject" value="Website contact form" />
+                <input type="hidden" name="_subject" value="Richiesta dal sito Eloquid" />
                 <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off" />
                 <input type="hidden" name="site" value="eloquid.com" />
 
                 <div class="col-12">
-                <button id="contact-form-button" type="submit" class="btn btn-primary">Send</button>
+                <button id="contact-form-button" type="submit" class="btn btn-primary">
+                    Contattaci
+                </button>
                 <p id="contact-form-status" class="mt-2 small" aria-live="polite"></p>
                 </div>
 
                 <p class="text-muted small mt-2">
-                By sending this form you agree to be contacted back about your request.
+                Inviando il form acconsenti a essere ricontattato in merito alla tua richiesta.
                 </p>
             </div>
             </form>
