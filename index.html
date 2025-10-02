@@ -13,7 +13,7 @@
     <meta property="og:image" content="assets/img/hero-img.png" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="img/eloquid-logo-icon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -37,14 +37,23 @@
 
     /* Ripristina i colori default di Bootstrap nei campi */
     #contact .form-control {
-        color: inherit;                 /* testo digitato: colore di default Bootstrap */
-        -webkit-text-fill-color: inherit;
+        color: #000;                    /* forza testo digitato in nero */
+        -webkit-text-fill-color: #000;
+    }
+
+    #contact .form-control:focus {
+        color: #000;
+        -webkit-text-fill-color: #000;
     }
 
     /* Placeholder/suggerimenti restano grigi */
     #contact .form-control::placeholder {
         color: #6c757d;                 /* grigio Bootstrap */
         opacity: 1;                     /* evita attenuazione su alcuni browser */
+    }
+
+    #contact-form-status {
+        color: #000;
     }
     </style>
 
@@ -500,7 +509,7 @@
 
             if (res.ok) {
               form.reset();
-              status.textContent = "Thanks! We received your message.";
+              status.textContent = "Grazie per il messaggio! ti ricontatteremo al più presto.";
             } else {
               const json = await res.json().catch(() => null);
               status.textContent = (json && json.errors && json.errors.length)
@@ -519,4 +528,5 @@
     </script>
   </body>
 </html>
+
 
