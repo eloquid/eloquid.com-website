@@ -2514,3 +2514,55 @@ section {
   outline: none;
   box-shadow: 0 0 0 4px rgba(214, 38, 124, 0.25);
 }
+
+/* ------------------------------
+   Typography Playground
+---------------------------------*/
+.type-playground {
+  background: #0e0e0e; /* matches dark theme */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.type-playground .section-header p {
+  color: #fff;
+}
+.type-card {
+  border: 1px solid rgba(214, 38, 124, 0.35);
+  border-radius: 12px;
+  padding: 18px 16px;
+  background: rgba(255,255,255,0.02);
+}
+.type-card.compact .sample { margin-bottom: 6px; }
+
+.type-label {
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #D6267C;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.sample {
+  margin-bottom: 10px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+/* Font families */
+.font-open-sans { font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+.font-lato      { font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+.font-montserrat{ font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+/* Helpful weights (mapped to what we loaded) */
+.fw-400 { font-weight: 400; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+/* Slightly larger first line in each card */
+.type-card .sample:first-of-type {
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  .type-card .sample:first-of-type { font-size: 2.2rem; }
+}
