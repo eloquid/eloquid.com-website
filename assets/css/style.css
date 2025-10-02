@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   color: #eeeeee;
   background: #111111;
 }
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -198,7 +198,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   margin-top: 3px;
 }
 
@@ -230,7 +230,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -513,7 +513,7 @@ section {
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -630,7 +630,7 @@ section {
 }
 
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -718,7 +718,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 14px;
 }
 
@@ -1031,7 +1031,7 @@ section {
   font-size: 36px;
   color: #444444;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 .pricing .price sup {
@@ -1077,7 +1077,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #D6267C;
@@ -2405,7 +2405,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
   margin-top: 3px;
 }
 
@@ -2413,7 +2413,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 .footer .footer-top .social-links a {
@@ -2550,9 +2550,9 @@ section {
 }
 
 /* Font families */
-.font-open-sans { font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-.font-lato      { font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-.font-montserrat{ font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+.font-open-sans { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.font-lato      { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.font-montserrat{ font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }
 
 /* Helpful weights (mapped to what we loaded) */
 .fw-400 { font-weight: 400; }
